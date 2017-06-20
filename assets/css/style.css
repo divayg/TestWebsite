@@ -1,0 +1,210 @@
+body{
+    margin:0px;
+    padding:0px;
+    padding-top:50px;
+}
+.navbar , .navbar-inverse{
+    background:linear-gradient(to right,#01cd55,#02a9fd);
+    border:none;
+}
+.navbar-header .navbar-brand{
+    font-size:2em;
+    font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    color:#fcfcfc;
+    font-weight: bolder;
+}
+.navbar-collapse .navbar-nav li a{
+    color:#332;
+    padding:15px;
+}
+ .navbar-inverse .navbar-nav > .active > a{
+  color: #333;
+  background-color: rgba(255,255,255,0.3);
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+    background-color: rgba(255,255,255,0.5);
+    color:#000;
+    font-size:18px;
+}
+
+
+section{
+    min-height:85vh;
+    width:100%;
+    
+    padding:20px;
+}
+.section1{
+    padding:10px;
+    background:linear-gradient(to right,#01cd55,#02a9fd);
+    min-height:90vh;
+}
+ 
+h1.heading{
+    font-weight: bold;
+    padding:20px;
+    color: #eee;
+    font-size:65px;
+}
+.header-space{
+    padding:35px;
+}
+p.description{
+    font-size:1.5em;
+}
+.center-align{
+    text-align: center;
+}
+
+.section2 h1.heading{
+    color:#ef2345;
+}
+.row-header{
+    padding:10px;
+
+}
+
+.section3 .heading{
+    color:#2385ff;
+    font-size:72px;
+    padding:20px;
+    margin-bottom:20px;
+    text-align: center;
+}
+
+.card-container{
+    width:100%;
+    padding:10px;
+    
+}
+
+
+.card{
+    width:300px;
+    min-height:250px;
+    border:1px solid #222;
+    border-radius: 5px;
+    padding:10px;
+    margin:15px;
+    box-shadow:0px 0px 5px 2px #999; 
+    background: #fefefe;
+}
+.card:hover{
+    box-shadow: 10px 10px 5px #aaaaaa;
+}
+.card>.card-heading{
+    font-size:30px;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight:bold;
+    color:#01cd55;
+}
+.card .card-description{
+    text-align:center;
+    font-size:17px;
+}
+.card .card-img img{
+    margin:auto;
+    width:70%;
+}
+
+
+.section4{
+    background:url("https://static.pexels.com/photos/33999/pexels-photo.jpg");
+    background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  min-height: 90vh;
+}
+.form-block{
+    width:80%;
+    margin:auto;
+    padding:10px;
+}
+.form-block h3{
+    font-size:40px;
+}
+.input-group> .form-control{
+    border-color:1px solid #f00 !important;
+}
+.input-group-addon{
+    background: #2e2e3e;
+    color:#eee;
+}
+
+
+.slide_in{
+	transform: translateY(50px);
+	opacity: 0;
+  	animation: slide-in 1.3s ease forwards;
+}
+
+.already-visible {
+  transform: translateY(0);
+  opacity: 1;
+  animation: none;
+}
+.slide_in:nth-child(even) {
+  animation-duration:1s;
+}
+
+@keyframes slide-in {
+  to { opacity: 1;  transform: translateY(0);}
+}
+
+
+.slide_in_right{
+	transform: translateX(25%);
+	opacity: 0;
+  	animation: slide_in_right 1.3s ease forwards;
+}
+
+.already-visible-right {
+  transform: translateX(0);
+  opacity: 1;
+  animation: none;
+}
+.slide_in_right:nth-child(even) {
+  animation-duration:1s;
+}
+
+@keyframes slide_in_right {
+  to { opacity: 1;  transform: translateX(0);}
+}
+
+.rotate{
+    transform:rotateY(350deg);
+    opacity: 0;
+  	animation: rotate 1.3s ease forwards;
+}
+.already-visible-rotate {
+  transform: rotateY(0);
+  opacity: 1;
+  animation: none;
+}
+.rotate:nth-child(even) {
+  animation-duration:1s;
+}
+
+@keyframes rotate {
+  to { opacity: 1;  transform: rotateY(0);}
+}
+
+@media screen and (max-width:768px){
+    .navbar .navbar-collapse{
+    background:rgba(255, 255, 255, 0.35);
+    }
+
+    .navbar-inverse .navbar-nav > li > a:hover{
+    color: #111;
+    font-size:17px;
+    }
+    .hero-img{
+        padding-top:30px;
+    }
+    .header-space{
+        padding:10px;
+    }
+}
