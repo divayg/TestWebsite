@@ -74,20 +74,15 @@ p.description{
     text-align: center;
 }
 
-.card-container{
-    width:100%;
-    padding:10px;
-    
-}
 
 
 .card{
-    width:300px;
+    width:250px;
     min-height:250px;
     border:1px solid #222;
     border-radius: 5px;
     padding:10px;
-    margin:15px;
+    margin:16px 0px;
     box-shadow:0px 0px 5px 2px #999; 
     background: #fefefe;
 }
@@ -206,5 +201,8 @@ p.description{
     }
     .header-space{
         padding:10px;
+    }
+    .card{
+        width:auto;
     }
 }
